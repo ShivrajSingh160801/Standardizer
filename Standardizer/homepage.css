@@ -150,10 +150,45 @@
   font-size: small;
 }
 
-.sortable-container{
+.DestinationClass {
+  margin: 6px;
+  padding: 7px;
+  border: solid 2px;
+  border-color: gainsboro;
+  font-size: small;
+  width: 97%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.mostlikely_sortable_container {
   border: solid 2px;
   border-color: gainsboro;
   padding: 5px;
   margin-top: 10px;
   font-size: small;
+}
+
+.likely_sortable_container {
+  border: solid 2px;
+  border-color: gainsboro;
+  padding: 5px;
+  margin-top: 10px;
+  font-size: small;
+}
+
+.possibles_sortable_container {
+  border: solid 2px;
+  border-color: gainsboro;
+  padding: 5px;
+  margin-top: 10px;
+  font-size: small;
+}
+
+
+.sort {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis !important;
 }

@@ -89,17 +89,17 @@ $(document).ready(function () {
         var newDiv = $("<div>");
         var mostLikelyDiv = newDiv
           .clone()
-          .addClass("sortable-container")
+          .addClass("mostlikely_sortable_container")
           .attr("id", "mostlikely_" + rowID)
           .attr("data-destination", "mostlikely"); // add data-destination attribute
         var likelyDiv = newDiv
           .clone()
-          .addClass("sortable-container")
+          .addClass("likely_sortable_container")
           .attr("id", "likely_" + rowID)
           .attr("data-destination", "likely"); // add data-destination attribute
         var possiblesDiv = newDiv
           .clone()
-          .addClass("sortable-container")
+          .addClass("possibles_sortable_container")
           .attr("id", "possibles_" + rowID)
           .attr("data-destination", "possibles"); // add data-destination attribute
 
@@ -114,12 +114,103 @@ $(document).ready(function () {
 
     }
 
-    $(".sortable-container").each(function () {
+    var masterlist = document.getElementById("DestinationAccountStructure");
+  new Sortable(masterlist, {
+    group: {
+      name: "shared",
+      pull: "clone",
+      put: false,
+    },
+    animation: 150,
+    sort: false, // To disable sorting: set sort to false
+    // onEnd: function(evt) {
+    //   // Get the dragged element
+    //   var item = evt.item;
+      
+    //   // Check if the element was dropped outside the container
+    //   if (evt.to !== masterlist) {
+    //     // Remove any class from the dragged element
+    //     item.classList = "sort";
+    //   }
+    // }
+  });
+  
+  $(".mostlikely_sortable_container").each(function () {
+    new Sortable(this, {
+      group: "shared",
+      animation: 150,
+      onAdd: function (evt) {
+        var item = evt.item;
+        var itemId = item.getAttribute('id');
+        var parentContainerId = evt.item.parentNode.getAttribute('id');
+        var destination = parentContainerId.substring(parentContainerId.indexOf('_')); // extract destination from parent container ID
+   
+        if (evt.item.parentNode.children.length == 2) {
+          var firstItem = evt.item.parentNode.children[0];
+          var likelyContainer = document.getElementById('likely' + destination);
+          likelyContainer.appendChild(firstItem);
+        }
+
+      }
+    });
+  });
+
+    $(".likely_sortable_container").each(function () {  
+      new Sortable(this, {
+        group: "shared",
+        animation: 150,
+        onAdd: function (evt) {
+          var item = evt.item;
+          var parentContainerId = evt.item.parentNode.getAttribute('id');
+          var destination = parentContainerId.substring(parentContainerId.indexOf('_')); // extract destination from parent container ID
+          if (evt.item.parentNode.children.length == 2) {
+            var firstItem = evt.item.parentNode.children[0];
+            var possibles = document.getElementById('possibles' + destination);
+            possibles.appendChild(firstItem);
+          }
+        }
+      });
+    });
+
+    $('.likely_sortable_container').on('DOMNodeInserted', function(e) {
+      var containerID = $(this).attr('id');
+      var destination = containerID.substring(containerID.indexOf('_'));
+    
+      // Get the number of child divs in the likely_sortable_container
+      var numChildDivs = $(this).children();
+      var numChildDivsLength = numChildDivs.length;
+      var firstChildDiv = numChildDivs.first();
+    
+      // If there are more than 1 child divs, move the first child div to the corresponding possibles_sortable_container
+      if (numChildDivsLength > 1) {
+        console.log(firstChildDiv);
+        var possibles_c = document.getElementById('possibles' + destination);
+        possibles_c.appendChild(firstChildDiv[0]);
+      }
+    });
+    
+    $('.possibles_sortable_container').on('DOMNodeInserted', function(e) {
+      var containerID = $(this).attr('id');
+      var destination = containerID.substring(containerID.indexOf('_'));
+        
+      // Get the number of child divs in the likely_sortable_container
+      var numChildDivs = $(this).children();
+      var numChildDivsLength = numChildDivs.length;
+      var firstChildDiv = numChildDivs.first();
+        
+      // If there are more than 1 child divs, move the first child div to the corresponding possibles_sortable_container
+      if (numChildDivsLength > 1) {
+        console.log(firstChildDiv);
+        firstChildDiv.remove(); // Remove the first child div
+      }
+    });
+    
+
+    $(".possibles_sortable_container").each(function () {
       new Sortable(this, {
         group: "shared",
         animation: 150,
       });
-      
     });
 
     // Add click event handlers to the buttons
@@ -252,24 +343,7 @@ $(document).ready(function () {
     $(".nav").toggleClass("justify-content-end  ");
     $(".toggle").toggleClass("text-light");
   });
-
-  var masterlist = document.getElementById("DestinationAccountStructure");
-  new Sortable(masterlist, {
-    group: {
-      name: "shared",
-      pull: "clone",
-      put: false,
-    },
-    animation: 150,
-    sort: false, // To disable sorting: set sort to false
-    onEnd: function(evt) {
-      // Get the dragged element
-      var item = evt.item;
-      // Remove any class from the dragged element
-      item.classList = "";
-    }
-  });
-  
+ 
 
 });
 
