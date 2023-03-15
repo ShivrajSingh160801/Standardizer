@@ -75,7 +75,7 @@ $(document).ready(function () {
             "white-space": "nowrap",
             "text-overflow": "ellipsis",
           });
-        var rowID = "row_" + data.Number; // create a unique row ID based on data number
+        var rowID =  data.Number; // create a unique row ID based on data number
         Sourcelist.attr("id", rowID); // set the ID of the new <div> element
         Sourcelist.append(textContainer).append(iconsContainer).css({
           overflow: "hidden",
@@ -119,6 +119,7 @@ $(document).ready(function () {
         group: "shared",
         animation: 150,
       });
+      
     });
 
     // Add click event handlers to the buttons
@@ -152,7 +153,7 @@ $(document).ready(function () {
           data.Name !== ""
         ) {
           // show the corresponding div
-          var divIndex = i + 1; // index of the corresponding div is 1-based
+          var divIndex = i ; // index of the corresponding div is 1-based
           var sourceDiv = SourceDiv.children(":nth-child(" + divIndex + ")");
           sourceDiv.show();
     
@@ -195,14 +196,14 @@ $(document).ready(function () {
       ) {
         // <div> element with the desired text
         var text = "⠿" + " " + data.AccountCode + "--" + data.AccountName;
-        var Masterlist = $("<div>").text(text).addClass("Masterclass");
+        var Masterlist = $("<div>").text(text).addClass("DestinationClass");
         // Append the new <p> element to the scrollable div
         MasterDiv.append(Masterlist);
       }
     }
     $("#MasterlistSearch").on("input", function () {
       var value = $(this).val().toLowerCase();
-      MasterDiv.children(".Masterclass").filter(function () {
+      MasterDiv.children(".DestinationClass").filter(function () {
         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
       });
     });
@@ -234,14 +235,14 @@ $(document).ready(function () {
         ) {
           // <div> element with the desired text
           var text = "⠿" + " " + data.AccountCode + "--" + data.AccountName;
-          var Masterlist = $("<div>").text(text).addClass("Masterclass");
+          var Masterlist = $("<div>").text(text).addClass("DestinationClass");
           // Append the new <p> element to the scrollable div
           MasterDiv.append(Masterlist);
         }
       }
       $("#MasterlistSearch").on("input", function () {
         var value = $(this).val().toLowerCase();
-        MasterDiv.children(".Masterclass").filter(function () {
+        MasterDiv.children(".DestinationClass").filter(function () {
           $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
         });
       });
