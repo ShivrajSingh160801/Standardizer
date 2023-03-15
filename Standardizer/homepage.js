@@ -123,7 +123,7 @@ $(document).ready(function () {
 
     // Add click event handlers to the buttons
     $("#navbarNav button").click(function () {
-      debugger
+     
       $("#navbarNav button").removeClass("active");
       $(this).addClass("active");
       var buttonValue = $("#navbarNav .btn.active").val();
@@ -159,6 +159,14 @@ $(document).ready(function () {
           // show the corresponding destination div
           var destination = mostLikelyDiv.attr("data-destination");
           $("#" + destination + "_" + sourceDiv.attr("id")).show();
+
+          var destination2 = likelyDiv.attr("data-destination");
+          $("#" + destination2 + "_" + sourceDiv.attr("id")).show();
+
+          
+          var destination3 = possiblesDiv.attr("data-destination");
+          $("#" + destination3 + "_" + sourceDiv.attr("id")).show();
+
         }
       }
       // update the current button value
