@@ -1,0 +1,331 @@
+AccountTypeCode,AccountTypeName,SubAccountTypeCode,SubAccountName,AccountCode,AccountName,SpecialtyEmergencyCashBasis,SpecialtyEmergencyAccrualBasis,GeneralPracticeCashBasis,GeneralPracticeAccrualBasis,GPSpecERHybridCashBasis,GPSpecERHybridAccrualBasis,EquineCashBasis,EquineAccuralBasis
+1000,ASSETS,1000,Current Assets,1001,Petty Cash,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1000,Current Assets,1002,Cash in Daily Drawer,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+1000,ASSETS,1000,Current Assets,1003,Undeposited Funds,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+1000,ASSETS,1000,Current Assets,1010,Primary Checking Account,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1000,Current Assets,1011,Secondary Checking Account,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1000,Current Assets,1012,Savings Account,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1000,Current Assets,1013,Certificates of Deposit,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1000,Current Assets,1014,Money Market Account,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1000,Current Assets,1100,Accounts Receivable,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+1000,ASSETS,1000,Current Assets,1101,Allowance for Uncollectable Accounts (contra account),FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+1000,ASSETS,1000,Current Assets,1120,Drug and Medical Supply Inventory,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+1000,ASSETS,1000,Current Assets,1130,Employee Advances,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1000,Current Assets,1131,Advances -- Related Party,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1000,Current Assets,1140,"Note Receivable, Current Portion -- Related Party",TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1000,Current Assets,1141,"Note Receivable, Current Portion -- Other",TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1000,Current Assets,1150,Prepaid Expenses,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+1000,ASSETS,1000,Current Assets,1160,Deposits for New Equipment,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1000,Current Assets,1170,Construction In Progress,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1200,Fixed Assets,1200,Professional Medical Equipment,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1200,Fixed Assets,1210,Computer Hardware,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1200,Fixed Assets,1220,"Office Equipment, Furniture & Fixtures",TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1200,Fixed Assets,1230,Practice Vehicles,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1200,Fixed Assets,1240,Leasehold/Building Improvements,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1200,Fixed Assets,1245,Buildings,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1200,Fixed Assets,1250,Land Improvements,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1200,Fixed Assets,1255,Land,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1200,Fixed Assets,1290,Accumulated Depreciation,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1300,Other Assets,1310,Computer Software,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1300,Other Assets,1320,Goodwill,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1300,Other Assets,1321,Covenant Not to Compete,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1300,Other Assets,1330,Organizational & Startup Costs,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1300,Other Assets,1340,Loan Costs,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1300,Other Assets,1350,Accumulated Amortization,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1300,Other Assets,1360,"Note Receivable, Long-Term Portion",TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1300,Other Assets,1370,Refundable Deposits,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+1000,ASSETS,1300,Other Assets,1380,Other Assets,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2000,Current Liabilities General,2001,Accounts Payable,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2000,Current Liabilities General,2002,Credit Cards Payable,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2000,Current Liabilities General,2003,Line of Credit,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2000,Current Liabilities General,2004,"Long-Term Loans & Capital Leases Payable, Current Portion",TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2000,Current Liabilities General,2005,"Loan Payable, Current Portion -- Related Party",TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2000,Current Liabilities General,2006,Unearned Revenue,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2100,Employer Payroll & Benefit Liabilities,2101,Payroll Tax Payable,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2100,Employer Payroll & Benefit Liabilities,2102,Wage Garnishment Payable,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+2000,LIABILITIES,2100,Employer Payroll & Benefit Liabilities,2103,Workers Compensation Payable,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2100,Employer Payroll & Benefit Liabilities,2104,Accrued Payroll & Bonuses,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2100,Employer Payroll & Benefit Liabilities,2105,Accrued Payroll Taxes,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2100,Employer Payroll & Benefit Liabilities,2106,Employer Retirement Plan Contribution Payable,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2200,Employee Payroll & Benefit Liabilities,2201,Employee Payroll Tax Withholding Payable,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2200,Employee Payroll & Benefit Liabilities,2202,Employee Withholding Payable,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2300,Other Tax Liabilities,2301,Sales & Use Tax Payable,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2300,Other Tax Liabilities,2302,Accrued Property Tax,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2300,Other Tax Liabilities,2303,Corporate Income Tax Payable,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2300,Other Tax Liabilities,2304,Franchise Tax Payable,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE
+2000,LIABILITIES,2300,Other Tax Liabilities,2305,Other Taxes Payable,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+2000,LIABILITIES,2500,Long-Term Liabilities,2501,"Loans & Capital Leases Payable, Long-Term Portion",TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3000,C-Corporation,3001,Common Stock,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3000,C-Corporation,3002,Additional Paid in Capital,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3000,C-Corporation,3003,Retained Earnings / (Deficit),TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3000,C-Corporation,3004,Distributions/Dividends/Draws,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3000,C-Corporation,3005,Treasury Stock,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3100,S-Corporation,3101,Common Stock,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3100,S-Corporation,3102,Additional Paid in Capital,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3100,S-Corporation,3103,Retained Earnings / (Deficit),TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3100,S-Corporation,3104,Distributions/Dividends/Draws,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3100,S-Corporation,3105,Treasury Stock,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3200,Proprietorship,3201,Owner's Capital,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3200,Proprietorship,3202,Additional Paid in Capital,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3200,Proprietorship,3203,Owner's Equity / (Deficit),TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3200,Proprietorship,3204,Distributions/Dividends/Draws,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3300,Partnership,3301,Partners's Capital -- Partner #1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3300,Partnership,3302,Partners's Capital -- Partner #2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3300,Partnership,3303,Partner's Equity / (Deficit),TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3300,Partnership,3304,Distributions/Dividends/Draws,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3400,"Limited Liability Company (""LLC"")",3401,Members' Capital,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3400,"Limited Liability Company (""LLC"")",3402,Members' Equity / (Deficit),TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+3000,EQUITY/CAPITAL,3400,"Limited Liability Company (""LLC"")",3403,Distributions/Dividends/Draws,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4000, Generalist Revenue,4001,GP Exam/Diagnostic Revenue,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4000, Generalist Revenue,4002,GP Hospitalization & Treatment Revenue,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4000, Generalist Revenue,4003,GP Vaccine Revenue,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4010,Emergency/Critical Care Revenue,4011,ER Exam/Diagnostic Revenue,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4010,Emergency/Critical Care Revenue,4012,ER Hospitalization & Treatment Revenue,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4010,Emergency/Critical Care Revenue,4013,ER Surgery Revenue,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4020,Large Animal Revenue,4021,Equine Revenue,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE
+4000,Professional Services Revenue,4020,Large Animal Revenue,4022,Farm Animal Revenue,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+4000,Professional Services Revenue,4020,Large Animal Revenue,4023,Zoological Revenue,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4101,Surgery,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4102,Internal Medicine,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4103,Cardiology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4104,"Oncology, Medical",TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4105,"Oncology, Radiation",TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4106,Neurology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4107,Ophthalmology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4108,Dermatology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4109,Dentistry,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4110,"Radiology, Diagnostic",TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4111,Anesthesia/Pain Management,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4112,Alternative/Acupuncture,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4113,Behavior,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4114,Rehabilitiation Therapy,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4115,Nutrition,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4116,Avian/Exotics,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4117,Diagnostic Lab / Clinical Pathology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4100,Specialty Revenue,4118,Theriogenology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+4000,Professional Services Revenue,4200,In-House Imaging Revenue,4201,X-Ray Revenue,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+4000,Professional Services Revenue,4200,In-House Imaging Revenue,4202,Dental X-Ray Revenue,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+4000,Professional Services Revenue,4200,In-House Imaging Revenue,4203,CT Revenue,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE
+4000,Professional Services Revenue,4200,In-House Imaging Revenue,4204,Ultrasound Revenue,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE
+4000,Professional Services Revenue,4200,In-House Imaging Revenue,4205,MRI Revenue,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE
+4000,Professional Services Revenue,4300,In-House Laboratory Revenue,,,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+4000,Professional Services Revenue,4400,Outside Professional Service Revenue,4401,Outside Laboratory Revenue,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+4000,Professional Services Revenue,4400,Outside Professional Service Revenue,4402,Outside Radiology (Imaging) Revenue,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+4000,Professional Services Revenue,4400,Outside Professional Service Revenue,4403,Mortuary/Disposal Services,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+4500,Product Revenue,4510,Medication (FDA controlled) Revenue,4511,FDA Prescription Medication Revenue,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+4500,Product Revenue,4510,Medication (FDA controlled) Revenue,4512,Injection Revenue,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+4500,Product Revenue,4510,Medication (FDA controlled) Revenue,4513,Flea-Tick Non-HW Parasite Control Medication Revenue,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+4500,Product Revenue,4510,Medication (FDA controlled) Revenue,4514,HW Parasite Control Medication Revenue,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+4500,Product Revenue,4510,Medication (FDA controlled) Revenue,4515,Internet Pharmacy Revenue,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+4000,Product Revenue,4520,Dietary Product Revenue,4521,Therapeutic Dietary Product Revenue,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+4000,Product Revenue,4520,Dietary Product Revenue,4522,Retail Dietary Product Revenue,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+4000,Product Revenue,4530,Other Product Revenue,4531,OTC Shampoo,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+4000,Product Revenue,4530,Other Product Revenue,4532,OTC Nutriceutical,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+4000,Product Revenue,4530,Other Product Revenue,4533,Pet Supplies,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+4000,Product Revenue,4530,Other Product Revenue,4534,OTC Flea-Tick Control Product,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+4000,Product Revenue,4530,Other Product Revenue,4535,Internet Ancillary Product,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+4000,Product Revenue,4600,Boarding Revenue,,,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+4000,Product Revenue,4700,Grooming Revenue,,,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+4000,Product Revenue,4900,Fee Discounts & Client Returns (contra accounts),4901,Fee Discounts,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+4000,Product Revenue,4900,Fee Discounts & Client Returns (contra accounts),4902,Returns & Allowances,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+5000,"Outside (or ""1099"") Professional Services Costs",5101,Relief Emergency,,,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+5000,"Outside (or ""1099"") Professional Services Costs",5102,Radiology,,,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+5000,"Outside (or ""1099"") Professional Services Costs",5103,Surgical,,,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+5000,"Outside (or ""1099"") Professional Services Costs",5104,Other Specialty,5104,Other Specialty,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+5000,"Outside (or ""1099"") Professional Services Costs",5200,In-House Imaging Costs,5201,X-Ray Cost,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+5000,"Outside (or ""1099"") Professional Services Costs",5200,In-House Imaging Costs,5202,Dental X-Ray Cost,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+5000,"Outside (or ""1099"") Professional Services Costs",5200,In-House Imaging Costs,5203,CT Cost,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE
+5000,"Outside (or ""1099"") Professional Services Costs",5200,In-House Imaging Costs,5204,Ultrasound Cost,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE
+5000,"Outside (or ""1099"") Professional Services Costs",5200,In-House Imaging Costs,5205,MRI Cost,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE
+5000,"Outside (or ""1099"") Professional Services Costs",5300,In-House Laboratory Costs,,,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+5000,"Outside (or ""1099"") Professional Services Costs",5400,Outside Professional Service Costs,5401,Outside Laboratory Revenue,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+5000,"Outside (or ""1099"") Professional Services Costs",5400,Outside Professional Service Costs,5402,Outside Radiology (Imaging) Revenue,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+5000,"Outside (or ""1099"") Professional Services Costs",5400,Outside Professional Service Costs,5403,Mortuary/Disposal Services,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+5000,"Outside (or ""1099"") Professional Services Costs",5500,Medical Supplies,5501,General Medical Supplies,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+5000,"Outside (or ""1099"") Professional Services Costs",5500,Medical Supplies,5502,Blood Products,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+5000,"Outside (or ""1099"") Professional Services Costs",5500,Medical Supplies,5503,Surgical Supplies,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+5000,"Outside (or ""1099"") Professional Services Costs",5500,Medical Supplies,5504,Laboratory Supplies,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+5000,"Outside (or ""1099"") Professional Services Costs",5500,Medical Supplies,5505,Medical/Diagnostic Software,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+5000,"Outside (or ""1099"") Professional Services Costs",5500,Medical Supplies,5506,Oxygen Supplies,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+5000,"Outside (or ""1099"") Professional Services Costs",5500,Medical Supplies,5507,Dermatological Supplies,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+5000,"Outside (or ""1099"") Professional Services Costs",5500,Medical Supplies,5508,Oncology Supplies,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+5000,"Outside (or ""1099"") Professional Services Costs",5500,Medical Supplies,5509,Other Specialty Supplies,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+5700,Product Costs,5710,Medication (FDA controlled) Costs,5711,FDA Prescription Medication Costs,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+5700,Product Costs,5710,Medication (FDA controlled) Costs,5712,Injection Costs,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+5700,Product Costs,5710,Medication (FDA controlled) Costs,5713,Flea-Tick Non-HW Parasite Control Medication Cost,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+5700,Product Costs,5710,Medication (FDA controlled) Costs,5714,HW Parasite Control Medication Cost,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+5700,Product Costs,5710,Medication (FDA controlled) Costs,5715,Internet Pharmacy Cost,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+5700,Product Costs,5720,Dietary Products,5721,Therapeutic Dietary Product Cost,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+5700,Product Costs,5720,Dietary Products,5722,Retail Dietary Product Cost,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+5700,Product Costs,5730,Other Product Costs,5731,OTC Shampoo,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+5700,Product Costs,5730,Other Product Costs,5732,OTC Nutriceutical,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+5700,Product Costs,5730,Other Product Costs,5733,Pet Supplies,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+5700,Product Costs,5730,Other Product Costs,5734,OTC Flea-Tick Control Product,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+5700,Product Costs,5730,Other Product Costs,5735,Internet Ancillary Product,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+5700,Product Costs,5800,Boarding Cost,,,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+5700,Product Costs,5900,Grooming Cost,,,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6000,Doctor Salary Expense,6000,Generalist Technician Salary,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6000,Doctor Salary Expense,6010,Emergency/Critical Care Salary,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6020,Large Animal Doctor Salary Expense,6021,Equine Revenue,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE
+6000,Labor Expense,6020,Large Animal Doctor Salary Expense,6022,Farm Animal Revenue,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+6000,Labor Expense,6020,Large Animal Doctor Salary Expense,6023,Zoological Revenue,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6051,Surgery,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6052,Internal Medicine,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6053,Cardiology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6054,"Oncology, Medical",TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6055,"Oncology, Radiation",TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6056,Neurology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6057,Ophthalmology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6058,Dermatology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6059,Dentistry,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6060,"Radiology, Diagnostic",TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6061,Anesthesia/Pain Management,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6062,Alternative/Acupuncture,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6063,Behavior,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6064,Rehabilitiation Therapy,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6065,Nutrition,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6066,Avian/Extics,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6067,Diagnostic Lab / Clinical Pathology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6050,Specialist Salary Expense,6068,Theriogenology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6100,Technician Salary Expense,6110,Generalist Technician Salary,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6100,Technician Salary Expense,6120,Emergency/Critical Care Salary,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6130,Large Animal Technician Salary Expense,6131,Equine Revenue,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE
+6000,Labor Expense,6130,Large Animal Technician Salary Expense,6132,Farm Animal Revenue,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+6000,Labor Expense,6130,Large Animal Technician Salary Expense,6133,Zoological Revenue,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6151,Surgery,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6152,Internal Medicine,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6153,Cardiology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6154,"Oncology, Medical",TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6155,"Oncology, Radiation",TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6156,Neurology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6157,Ophthalmology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6158,Dermatology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6159,Dentistry,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6160,"Radiology, Diagnostic",TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6161,Anesthesia/Pain Management,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6162,Alternative/Acupuncture,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6163,Behavior,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6164,Rehabilitiation Therapy,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6165,Nutrition,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6166,Avian/Extics,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6167,Diagnostic Lab / Clinical Pathology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6150,Specialty Technican Salary Expense,6168,Theriogenology,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+6000,Labor Expense,6200,Other Salary Expense,6200,"Client Service Representative (""CSR"") Salary Expense",TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6200,Other Salary Expense,6210,Management Salary Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6200,Other Salary Expense,6220,Adminstrative Salary Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6200,Other Salary Expense,6230,Maintenance Salary Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6200,Other Salary Expense,6240,Groomer Compensation Expense,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6200,Other Salary Expense,6250,Boarding Staff Compensation Expense,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6200,Other Salary Expense,6260,Owner Compensation Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6310,Employer Payroll Taxes,6311,FICA Tax Expense -- Employer's Portion,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6310,Employer Payroll Taxes,6312,Federal Unemployment Tax Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6310,Employer Payroll Taxes,6313,State Unemployment Tax Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6310,Employer Payroll Taxes,6314,Other Employer Payroll Tax Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6320,Employer Fringe Benefits Expense,6321,Group Health Insurance Premium,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6320,Employer Fringe Benefits Expense,6322,S-Corporation Shareholder Health Insurance Premium,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6320,Employer Fringe Benefits Expense,6323,Group Dental/Vision Insurance Premium Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6320,Employer Fringe Benefits Expense,6324,Group Disability Insurance Premium Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6320,Employer Fringe Benefits Expense,6325,Group Term Life Insurance Premium Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6330,"""Paid Time Off"" (""PTO"") Expense",6331,Sick Pay,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6330,"""Paid Time Off"" (""PTO"") Expense",6332,Vacation Pay,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6340,Employee-Related Insurance Expense,6341,Professional Liability Insurance Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6340,Employee-Related Insurance Expense,6342,Workers Compensation Insurance Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6340,Employee-Related Insurance Expense,6343,Employment Practices Liability Insurance Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6340,Employee-Related Insurance Expense,6350,"Employer Retirement Plan (e.g., 401(k)) Contribution Expense",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+6000,Labor Expense,6360,Continuing Education Expense,6361,Registration Fees,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6360,Continuing Education Expense,6362,Educational Materials Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6360,Continuing Education Expense,6363,Staff Training Fees & Costs,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6370,Travel & Lodging Expense,6371,Airfare,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6370,Travel & Lodging Expense,6372,Lodging,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6370,Travel & Lodging Expense,6373,Ground Transportation,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6370,Travel & Lodging Expense,6374,"Mileage Reimbursement (eg, for CE travel)",TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6380,Other Employee-Related Expenses,6381,"Study Group Fees (eg, VMG)",TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6380,Other Employee-Related Expenses,6382,Business Meals & Entertainment,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6380,Other Employee-Related Expenses,6383,Staff Events & Recreation,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6380,Other Employee-Related Expenses,6384,Employee Recruitment,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6380,Other Employee-Related Expenses,6385,Laundry & Uniform,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6400,Facility Expense,6400,Real Estate Rental Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6400,Facility Expense,6404,Equipment Rental Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6400,Facility Expense,6408,Remote Storage Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6400,Facility Expense,6409,Minor Equipment Expense,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+6000,Labor Expense,6410,"Equipment Maintenance Expense, In-House",6411,Medical Equipment Maintenance,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6410,"Equipment Maintenance Expense, In-House",6412,Lab Equipment Maintenance,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6410,"Equipment Maintenance Expense, In-House",6413,Office Equipment Maintenance,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6410,"Equipment Maintenance Expense, In-House",6414,Computer/IT Equipment Maintenance,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6410,"Equipment Maintenance Expense, In-House",6415,Building Maintenance,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6420,"Equipment Maintenance, Service Contracts",6421,Medical Equipment Service Contract,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6420,"Equipment Maintenance, Service Contracts",6422,Lab Equipment Service Contract,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6420,"Equipment Maintenance, Service Contracts",6423,Office Equipment Service Contract,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6420,"Equipment Maintenance, Service Contracts",6424,Computer/IT Equipment Service Contract,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6420,"Equipment Maintenance, Service Contracts",6425,Buiilding Service Contract,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6430,Equipment Repair Expense,6431,Medical Equipment Repairs,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6430,Equipment Repair Expense,6432,Lab Equipment Repairs,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6430,Equipment Repair Expense,6433,Office Equipment Repairs,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6430,Equipment Repair Expense,6434,Computer/IT Equipment Repairs,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6430,Equipment Repair Expense,6435,Facility Repairs,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6440,Janatorial/Cleaning Expense,,,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6450,General Liability Insurance Expense,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+6000,Labor Expense,6455,Flood Insurance Expense,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+6000,Labor Expense,,Property Tax Expense,6461,Real Estate Tax Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,,Property Tax Expense,6465,Personal Property Tax Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,,Property Tax Expense,6470,Practice Vehicle Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6480,Utility Services,6481,Electricity,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6480,Utility Services,6482,Natural Gas/Oil/Propane,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6480,Utility Services,6483,Water,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6480,Utility Services,6484,Sewer,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6480,Utility Services,6485,Garbage Removal,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6490,Communication Services,6491,Landline Voice,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6490,Communication Services,6492,Mobile Voice,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6490,Communication Services,6493,Answering Service,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6490,Communication Services,6494,Landline Internet & TV,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6501,Licenses & Permits,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6502,Use Tax,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6503,Franchise Tax,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6504,Other Tax,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6505,Veterinary & Professional Dues,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6506,Client Education Material,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6507,Business Gifts,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6508,Charitable Contributions,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6509,Computer Supplies,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6510,Office/Medical Software,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6511,Office Supplies,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6512,Postage & Delivery,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6513,Printing & Reproduction,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6514,Accounting Fees,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6515,Bookkeeping Services,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6516,Payroll Service Fees,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6517,Employee Benefits Administration,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6518,Legal Services Fees,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6500,Administrative Expense General,6519,Business Consultation Fees,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6600,Advertising & Promotion,6601,Yellow Page Advertising,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6600,Advertising & Promotion,6602,Website Maintenance,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6600,Advertising & Promotion,6603,Internet Advertising,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6600,Advertising & Promotion,6604,Direct Mailing,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6600,Advertising & Promotion,6605,Client Reminders,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6600,Advertising & Promotion,6606,Memorial Contributions,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6600,Advertising & Promotion,6607,Sponsored Events,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6600,Advertising & Promotion,6608,Marketing Consulting Fees,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6600,Advertising & Promotion,6609,Advertising & Promotion -- Other,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6700,Cash-Related Services Fees,6701,Bank Charges & Service Fees,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6700,Cash-Related Services Fees,6702,Merchant Services Fees,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6700,Cash-Related Services Fees,6703,Care Credit Service Fees,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6700,Cash-Related Services Fees,6704,Collection Fees,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6700,Cash-Related Services Fees,6705,Bad Debt Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,6700,Cash-Related Services Fees,6706,Returned Check Fees,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,7000,Depreciation & Amortization,7000,Depreciation Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,7000,Depreciation & Amortization,7050,Amortization Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,,Other Revenue,8001,Interest Revenue,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,,Other Revenue,8002,Rent Revenue,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,,Other Revenue,8003,Miscellaneous Revenue,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,,Other Expense,8101,Miscellaneous Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,,Other Expense,8102,Fines & Penalties,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,,Other Expense,8103,Officer/Key Person Life Insurance,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,,Other Expense,8104,Officer Disability Insurance,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,,Interest Expense,8201,Interest Expense -- 3rd Party,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,,Interest Expense,8202,Interest Expense -- Shareholder/Owner,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,,Interest Expense,8203,Interest Expense -- Other,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,,Interest Expense,8204,SBA Funding Fees,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+6000,Labor Expense,,Income Tax Expense,8301,Federal Income Tax Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,,Income Tax Expense,8302,State Income Tax Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,,Income Tax Expense,8303,Local Income Tax Expense,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+6000,Labor Expense,9900,Ask My Accountant,9000,Ask My Accountant,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
