@@ -80,10 +80,12 @@
                                 Expense </button>
                         </li>
                     </ul>
-                    <div class="navbar-nav ms-auto pe-3">
-                        <button class="btn btn-sm px-4 text-white" style="background-color:#00961F;">Submit</button>
-                    </div>
                 </div>
+                <div class="">
+                    <button class="btn btn-sm px-4 text-white" type="button" style="background-color:#00961F;" id="submit">Submit</button>
+                  
+                </div>
+                <div class="lastupdated ms-auto pe-3"></div>
             </div>
         </nav>
 
@@ -132,58 +134,60 @@
                     <div id="Possibles">
                     </div>
                 </div>
-                <div class="col-md-3  ">
+                <div class="col-md-3">
                     <p class="p-2 rounded  text-white mt-3 small" style="background-color: #009E60;"> Balance Sheet
                         Accounts
                     </p>
-                    <div id="SourceScollBar">
-                        <div>
-                            <div class="d-flex align-items-center">
-                                <div class="flex-shrink-0">
-                                    <button class="btn-left btn ps-2 btn-link toggle text-dark"><i
-                                            class="material-icons">arrow_back_ios</i></button>
-                                </div>
-                                <div class="flex-grow-1 w-100 o-hidden nav-container ">
-                                    <ul class="nav destination_navabr  small position-relative flex-nowrap">
-                                        <li class="nav-item">
-                                            <button class="btn text-black btn-sm fw-bold active">All</button>
-                                        </li>
-                                        <li class="nav-item">
-                                            <button class="btn text-black fw-bold btn-sm "
-                                                value="Assets">Assets</button>
-                                        </li>
-                                        <li class="nav-item">
-                                            <button class="btn text-black fw-bold btn-sm"
-                                                value="Liabilities">Liability</button>
-                                        </li>
-                                        <li class="nav-item">
-                                            <button class="btn text-black fw-bold btn-sm"
-                                                value="Equity">Equity/Capital</button>
-                                        </li>
-                                        <li class="nav-item">
-                                            <button class="btn text-black fw-bold btn-sm"
-                                                value="Revenue">Revenue</button>
-                                        </li>
-                                        <li class="nav-item">
-                                            <button class="btn text-black fw-bold btn-sm" value="Costs">CoGS</button>
-                                        </li>
-                                        <li class="nav-item">
-                                            <button class="btn text-black fw-bold btn-sm"
-                                                value="Expense">G&A Expenses</button>
-                                        </li>
-                                        <li class="nav-item">
-                                            <button class="btn text-black fw-bold btn-sm "
-                                                value="Expense">Other Revenue and Expenses</button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="flex-shrink-0">
-                                    <button class="btn-right btn btn-link toggle pe-2 text-dark"><i
-                                            class="material-icons">arrow_forward_ios</i></button>
+                 
+                            <div id="SourceScollBar">
+                                <div class="d-flex align-items-center small">
+                                    <div class="flex-shrink-0">
+                                        <button class="btn-left btn ps-2 btn-link toggle text-dark"><i
+                                                class="material-icons">arrow_back_ios</i></button>
+                                    </div>
+                                    <div class="flex-grow-1 w-100 o-hidden  nav-container ">
+                                        <ul class=" nav destination_navabr  position-relative flex-nowrap">
+                                            <li class="nav-item">
+                                                <button class="btn text-black btn-sm fw-bold active">All</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="btn text-black fw-bold btn-sm "
+                                                    value="Assets">Assets</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="btn text-black fw-bold btn-sm"
+                                                    value="Liabilities">Liability</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="btn text-black fw-bold btn-sm"
+                                                    value="Equity">Equity/Capital</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="btn text-black fw-bold btn-sm"
+                                                    value="Revenue">Revenue</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="btn text-black fw-bold btn-sm"
+                                                    value="Costs">CoGS</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="btn text-black fw-bold btn-sm "
+                                                    value="Expense">G&A&nbsp;Expenses</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="btn text-black fw-bold btn-sm "
+                                                    value="Expense">Other&nbsp;Revenue&nbsp;and&nbsp;Expenses</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex-shrink-0">
+                                        <button class="btn-right btn btn-link toggle pe-2 text-dark"><i
+                                                class="material-icons">arrow_forward_ios</i></button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                       
+
                     <input type="text" class="p-2 mt-0" id="MasterlistSearch" placeholder="Search...">
                     <div id="DestinationAccountStructure" style="overflow-y: scroll; height: 580px;">
                     </div>
@@ -191,6 +195,11 @@
             </div>
         </div>
     </section>
+
+    <script>
+
+    </script>
+    
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
