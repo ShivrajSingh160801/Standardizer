@@ -51,10 +51,7 @@
     <section class="mt-4">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            
                 <div class="collapse navbar-collapse ps-3 MainNavbar" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item me-2">
@@ -81,18 +78,30 @@
                         </li>
                     </ul>
                 </div>
-                <div class="">
-                    <button class="btn btn-sm px-4 text-white" type="button" style="background-color:#00961F;" id="submit">Submit</button>
-                  
+                <div>
+                    <button class="btn btn-sm px-4 text-white" type="button" style="background-color:#00961F;"
+                        id="submit">Submit</button><br>
+                        <div class="row">
+                            <div class="lastupdated" style="font-size:x-small;">
+
+                            </div>
+                        </div>
                 </div>
-                <div class="lastupdated ms-auto pe-3"></div>
+                
             </div>
         </nav>
-
     </section>
 
-    <section class="container-fluid mt-5 mb-5">
+    <div class="row mt-4 mx-3">
+        <div class="col-md-12">
+            <div class="text-start fw-bold">
+                <p class="humanUpdated" style="color: #eca46e;"><span class="pe-1"><i class="fa-regular fa-circle"></i></span> Human
+                    Updated</p>
+            </div>
+        </div>
+    </div>
 
+    <section class="container-fluid mt-5 mb-5">
         <div class="row ps-2">
             <div class="row">
                 <div class="col-md-3">
@@ -138,56 +147,51 @@
                     <p class="p-2 rounded  text-white mt-3 small" style="background-color: #009E60;"> Balance Sheet
                         Accounts
                     </p>
-                 
-                            <div id="SourceScollBar">
-                                <div class="d-flex align-items-center small">
-                                    <div class="flex-shrink-0">
-                                        <button class="btn-left btn ps-2 btn-link toggle text-dark"><i
-                                                class="material-icons">arrow_back_ios</i></button>
-                                    </div>
-                                    <div class="flex-grow-1 w-100 o-hidden  nav-container ">
-                                        <ul class=" nav destination_navabr  position-relative flex-nowrap">
-                                            <li class="nav-item">
-                                                <button class="btn text-black btn-sm fw-bold active">All</button>
-                                            </li>
-                                            <li class="nav-item">
-                                                <button class="btn text-black fw-bold btn-sm "
-                                                    value="Assets">Assets</button>
-                                            </li>
-                                            <li class="nav-item">
-                                                <button class="btn text-black fw-bold btn-sm"
-                                                    value="Liabilities">Liability</button>
-                                            </li>
-                                            <li class="nav-item">
-                                                <button class="btn text-black fw-bold btn-sm"
-                                                    value="Equity">Equity/Capital</button>
-                                            </li>
-                                            <li class="nav-item">
-                                                <button class="btn text-black fw-bold btn-sm"
-                                                    value="Revenue">Revenue</button>
-                                            </li>
-                                            <li class="nav-item">
-                                                <button class="btn text-black fw-bold btn-sm"
-                                                    value="Costs">CoGS</button>
-                                            </li>
-                                            <li class="nav-item">
-                                                <button class="btn text-black fw-bold btn-sm "
-                                                    value="Expense">G&A&nbsp;Expenses</button>
-                                            </li>
-                                            <li class="nav-item">
-                                                <button class="btn text-black fw-bold btn-sm "
-                                                    value="Expense">Other&nbsp;Revenue&nbsp;and&nbsp;Expenses</button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="flex-shrink-0">
-                                        <button class="btn-right btn btn-link toggle pe-2 text-dark"><i
-                                                class="material-icons">arrow_forward_ios</i></button>
-                                    </div>
-                                </div>
-                            </div>
-                       
 
+                    <div id="SourceScollBar">
+                        <div class="d-flex align-items-center small">
+                            <div class="flex-shrink-0">
+                                <button class="btn-left btn ps-2 btn-link toggle text-dark"><i
+                                        class="material-icons">arrow_back_ios</i></button>
+                            </div>
+                            <div class="flex-grow-1 w-100 o-hidden  nav-container ">
+                                <ul class=" nav destination_navabr  position-relative flex-nowrap">
+                                    <li class="nav-item">
+                                        <button class="btn text-black btn-sm fw-bold active">All</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="btn text-black fw-bold btn-sm " value="Assets">Assets</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="btn text-black fw-bold btn-sm"
+                                            value="Liabilities">Liability</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="btn text-black fw-bold btn-sm"
+                                            value="Equity">Equity/Capital</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="btn text-black fw-bold btn-sm" value="Revenue">Revenue</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="btn text-black fw-bold btn-sm" value="Costs">CoGS</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="btn text-black fw-bold btn-sm "
+                                            value="Expense">G&A&nbsp;Expenses</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="btn text-black fw-bold btn-sm "
+                                            value="Expense">Other&nbsp;Revenue&nbsp;and&nbsp;Expenses</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex-shrink-0">
+                                <button class="btn-right btn btn-link toggle pe-2 text-dark"><i
+                                        class="material-icons">arrow_forward_ios</i></button>
+                            </div>
+                        </div>
+                    </div>
                     <input type="text" class="p-2 mt-0" id="MasterlistSearch" placeholder="Search...">
                     <div id="DestinationAccountStructure" style="overflow-y: scroll; height: 580px;">
                     </div>
@@ -199,12 +203,15 @@
     <script>
 
     </script>
-    
+
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <!-- Sortable JS -->
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- Font- AWesome CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"

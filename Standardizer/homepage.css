@@ -36,15 +36,18 @@
   overflow: hidden;
 }
 
-.nav.justify-content-end {
-  transform: translateX(0);
-  left: 0;
-}
-
 .nav {
   transition: transform 0.4s;
   transform: translateX(50%);
   left: -50%;
+  display: flex;
+  justify-content: start;
+  padding: 0 20px; 
+}
+
+.nav.justify-content-end {
+  transform: translateX(0);
+  left: 0;
 }
 
 .MainNavbarButtons {

@@ -1,0 +1,40 @@
+/* Top Tab-Bar CoA*/
+.MainTabBar .nav-link {
+  position: relative;
+}
+
+.MainTabBar .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 51%;
+  height: 2px;
+  bottom: -13px;
+  left: 13px !important;
+  background-color: #8ccfeb;
+  visibility: hidden;
+  transform: scaleX(0);
+}
+
+.MainTabBar .nav-link.active::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.CoATAb {
+  color: #00a5e5 !important;
+}
+
+
+/*NavBAr For Standard-CofA-Data Buttons*/
+.Standard_CofA .btn.active {
+    background-color: #3CB7E7 !important;
+    color: white !important;
+  }
+
+  .Standard_CofA_Buttons {
+    background-color: #EFF2F3;
+    color: #6c7972;
+    border-bottom: solid 2px gainsboro
+  }
+
+

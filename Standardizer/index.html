@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Standardizer</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous" />
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <!-- Open Sans font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <nav class="MainTabBar navbar navbar-expand-lg border-bottom border-dark-subtle" style="background-color: #efeff0">
+        <div class="container-fluid" style="height: 50px">
+            <a href="#" class="navbar-brand">
+                <img src="./Files/Standardizer Logo.png" />
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-5 ps-5">
+                    <a href="#" class="nav-item nav-link fw-bolder active CoATAb">CoA</a>
+                </div>
+                <div class="navbar-nav ms-auto pe-3">
+                    <a class="nav-item nav-link"><img src="./Images/image2.jpg" class="rounded-circle" height="30px"
+                            width="30px" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+        <section class="mt-4">
+            <nav class="navbar  navbar-expand-lg ">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse ps-3 Standard_CofA" id="Standard_CofA">
+                        <ul class="navbar-nav">
+                            <li class="nav-item me-2">
+                                <button class="btn btn-sm px-4 active Standard_CofA_Buttons"
+                                    data-Standard-Type="Assets">Assets</button>
+                            </li>
+                            <li class="nav-item me-2">
+                                <button class="btn btn-sm px-4 Standard_CofA_Buttons"
+                                    data-Standard-Type="Liabilities">Liability</button>
+                            </li>
+                            <li class="nav-item me-2">
+                                <button class="btn btn-sm px-4 Standard_CofA_Buttons"
+                                    data-Standard-Type="Equity">Equity/Capital</button>
+                            </li>
+                            <li class="nav-item me-2 jus">
+                                <button class="btn btn-sm px-4 Standard_CofA_Buttons"
+                                    data-Standard-Type="Revenue">Revenue</button>
+                            </li>
+                            <li class="nav-item me-2">
+                                <button class="btn btn-sm px-4 Standard_CofA_Buttons"
+                                    data-Standard-Type="COGS">CoGS</button>
+                            </li>
+                            <li class="nav-item me-2">
+                                <button class="btn btn-sm px-4 Standard_CofA_Buttons" data-Standard-Type="Expense">G&A
+                                    Expenses</button>
+                            </li>
+                            <li class="nav-item me-2">
+                                <button class="btn btn-sm px-4 Standard_CofA_Buttons" data-Standard-Type="Other Rev & Exp">Other
+                                    Revenue &
+                                    Expense </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button class="btn px-4 small text-center text-white me-4" type="button"
+                            style="background-color: #00961f" id="submit">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section class="container-fluid mt-5 mb-5">
+            <div class="row ps-2">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5 class="fw-bold" style="margin-bottom: -0.5rem;">Source Account Structure</h5>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h5 class="fw-bold" style="margin-bottom: -0.5rem;">Likely Destination Account</h5>
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="fw-bold" style="margin-bottom: -0.5rem;">Destination Account Structure</h5>
+                    </div>
+                </div>
+    
+                <div class="row mt-1 row-container">
+                    <div class="col-md-3 ">
+                        <p class="p-2 rounded text-white mt-3 small " style="background-color: #00A5E5;"> Balance Sheet
+                            Accounts
+                        </p>
+                        <div id="SourceAccountStructure">
+                        </div>
+                    </div>
+    
+                    <div class="col-md-2">
+                        <p class="p-2 text-white me-0 ms-0 mt-3 small" style="background-color:#00C0CD;">Most Likely</p>
+                        <div id="MostLikely">
+                        </div>
+                    </div>
+                    <div class="col-md-2 ">
+                        <p class="p-2 text-white  mt-3 small" style="background-color:#48CCCD">Likely</p>
+                        <div id="Likely">
+                        </div>
+                    </div>
+                    <div class="col-md-2 ">
+                        <p class="p-2 text-white mt-3 small" style="background-color:#7FDFE6">Possible</p>
+                        <div id="Possibles">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="p-2 rounded  text-white mt-3 small" style="background-color: #009E60;"> Balance Sheet
+                            Accounts
+                        </p>
+    
+                        <div id="DestinationAccountStructure" style="overflow-y: scroll; height: 580px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+</body>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<!-- Sortable JS -->
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+
+<!-- Font- AWesome CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
+    integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Bootstrap CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+<script src="./script.js"></script>
+
+</html>

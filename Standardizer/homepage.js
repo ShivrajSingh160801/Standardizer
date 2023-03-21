@@ -14,10 +14,6 @@ function csvJSON(csv) {
 }
 
 $(document).ready(function () {
-
-
-
-
   const section1Buttons = $("#navbarNav button");
   // Get all the buttons in Section 2
   const section2Buttons = $(".destination_navabr button");
@@ -82,7 +78,7 @@ $(document).ready(function () {
         var rowID = data.Number; // create a unique row ID based on data number
         Sourcelist.attr("id", rowID); // set the ID of the new <div> element
         Sourcelist.append(textContainer).append(iconsContainer).css({
-          "overflow": "hidden",
+          overflow: "hidden",
           "white-space": "nowrap",
         });
 
@@ -107,7 +103,9 @@ $(document).ready(function () {
           .attr("id", "possibles_" + rowID)
           .attr("data-destination", "possibles"); // add data-destination attribute
 
-        mostLikelyDiv.outerHeight(Sourcelist.outerHeight()).outerWidth(MostLikelyDiv.outerWidth());
+        mostLikelyDiv
+          .outerHeight(Sourcelist.outerHeight())
+          .outerWidth(MostLikelyDiv.outerWidth());
         likelyDiv.outerHeight(Sourcelist.outerHeight());
         possiblesDiv.outerHeight(Sourcelist.outerHeight());
 
@@ -115,9 +113,6 @@ $(document).ready(function () {
         LikelyDiv.append(likelyDiv);
         PossiblesDiv.append(possiblesDiv);
       }
-
-
-
     }
     var masterlist = document.getElementById("DestinationAccountStructure");
     new Sortable(masterlist, {
@@ -128,16 +123,6 @@ $(document).ready(function () {
       },
       animation: 150,
       sort: false, // To disable sorting: set sort to false
-      onEnd: function (evt) {
-        // Get the dragged element
-        var item = evt.item;
-
-        // Check if the element was dropped outside the container
-        if (evt.to !== masterlist) {
-          // Add class from of the target element
-          item.classList = "sort";
-        }
-      }
     });
 
     $(".mostlikely_sortable_container").each(function () {
@@ -145,64 +130,135 @@ $(document).ready(function () {
         group: "shared",
         animation: 150,
         onAdd: function (evt) {
-
-          
+          evt.item.classList = "sort_mostlikely";
           var parentContainer = evt.item.parentNode;
-          if (parentContainer.children.length > 1) {
-            var secondItem = parentContainer.children[1];
-            var destination = parentContainer.getAttribute('id').substring(parentContainer.getAttribute('id').indexOf('_'));
-            var possible = document.getElementById('possibles' + destination);
-            var likely = document.getElementById('likely' + destination);
 
-            if (likely.children.length == 0) {
-              likely.appendChild(secondItem);
-            }
-            else if (likely.children.length == 1) {
-              likely.appendChild(secondItem)
+          var destination = parentContainer
+            .getAttribute("id")
+            .substring(parentContainer.getAttribute("id").indexOf("_"));
+            
+          var possible = document.getElementById("possibles" + destination);
+          var likely = document.getElementById("likely" + destination)
 
-              if (possible.children.length == 0) {
-                var secondlikelychild = likely.children[0];
-                possible.appendChild(secondlikelychild)
+
+          if (parentContainer.children.length == 1){
+            if( (likely.children.length == 1 &&
+              likely.children[0].innerText ==
+              parentContainer.children[0].innerText) ||
+            (possible.children.length == 1 &&
+              possible.children[0].innerText ==
+              parentContainer.children[0].innerText))
+              {
+                swal("Account already Exists In Row", "Kindly Check Again", "error", {
+                  button: "Ok!",
+                });
+                parentContainer.removeChild(evt.item);
               }
+          }
 
-              else if (possible.children.length == 1) {
-                possible.children[0].remove();
-                var secondlikelychild = likely.children[0];
-                possible.appendChild(secondlikelychild)
+         else if (parentContainer.children.length > 1) {
+            if (
+              parentContainer.children[0].innerText ==
+              parentContainer.children[1].innerText ||
+              (likely.children.length == 1 &&
+                likely.children[0].innerText ==
+                parentContainer.children[0].innerText) ||
+              (possible.children.length == 1 &&
+                possible.children[0].innerText ==
+                parentContainer.children[0].innerText)
+            ) {
+              swal("Account already Exists In Row", "Kindly Check Again", "error", {
+                button: "Ok!",
+              });
+              parentContainer.removeChild(evt.item);
+            }
+
+            else {
+              var secondItem = parentContainer.children[1];
+
+              if (likely.children.length == 0) {
+                likely.appendChild(secondItem);
+              } else if (likely.children.length == 1) {
+                likely.appendChild(secondItem);
+
+                if (possible.children.length == 0) {
+                  var secondlikelychild = likely.children[0];
+                  possible.appendChild(secondlikelychild);
+                } else if (possible.children.length == 1) {
+                  possible.children[0].remove();
+                  var secondlikelychild = likely.children[0];
+                  possible.appendChild(secondlikelychild);
+                }
               }
             }
           }
-        }
+        },
       });
+
     });
 
     $(".likely_sortable_container").each(function () {
       new Sortable(this, {
         group: "shared",
         animation: 150,
+        
         onAdd: function (evt) {
+          evt.item.classList = "sort_likely";
           var parentContainer = evt.item.parentNode;
+          var destination = parentContainer
+            .getAttribute("id")
+            .substring(parentContainer.getAttribute("id").indexOf("_"));
+          var mostlikely = document.getElementById("mostlikely" + destination);
+          var possibles = document.getElementById("possibles" + destination);
+
+          
+          if (parentContainer.children.length == 1){
+            if( (mostlikely.children.length == 1 &&
+              mostlikely.children[0].innerText ==
+              parentContainer.children[0].innerText) ||
+            (possibles.children.length == 1 &&
+              possibles.children[0].innerText ==
+              parentContainer.children[0].innerText))
+              {
+                swal("Account already Exists In Row", "Kindly Check Again", "error", {
+                  button: "Ok!",
+                });
+                parentContainer.removeChild(evt.item);
+              }
+          }
+
           if (parentContainer.children.length > 1) {
-
-            var secondItem = parentContainer.children[1];
-            var destination = parentContainer.getAttribute('id').substring(parentContainer.getAttribute('id').indexOf('_'))
-            var possibles = document.getElementById('possibles' + destination);
-
-            if (possibles.children.length == 0) {
-              possibles.appendChild(secondItem);
+            if (parentContainer.children[0].innerText ==
+              parentContainer.children[1].innerText ||
+              (mostlikely.children.length == 1 &&
+                mostlikely.children[0].innerText ==
+                parentContainer.children[0].innerText) ||
+              (possibles.children.length == 1 &&
+                possibles.children[0].innerText ==
+                parentContainer.children[0].innerText)) {
+                  swal("Account already Exists In Row", "Kindly Check Again", "error", {
+                    button: "Ok!",
+                  });
+              parentContainer.removeChild(evt.item);
             }
+            else {
+              var secondItem = parentContainer.children[1];
+              var destination = parentContainer
+                .getAttribute("id")
+                .substring(parentContainer.getAttribute("id").indexOf("_"));
 
-            else if (possibles.children.length == 1) {
-              possibles.appendChild(secondItem);
-              var possibleschild = possibles.children[0];
-              possibleschild.remove();
+              if (possibles.children.length == 0) {
+                possibles.appendChild(secondItem);
+              } else if (possibles.children.length == 1) {
+                possibles.appendChild(secondItem);
+                var possibleschild = possibles.children[0];
+                possibleschild.remove();
+              }
             }
 
           }
-        }
+        },
       });
-
-
     });
 
     $(".possibles_sortable_container").each(function () {
@@ -210,37 +266,72 @@ $(document).ready(function () {
         group: "shared",
         animation: 150,
         onAdd: function (evt) {
+          evt.item.classList = "sort_possible";
           var parentContainer = evt.item.parentNode;
-          if (parentContainer.children.length > 1) {
-            parentContainer.children[1].remove();
-          }
-        }
+          var destination = parentContainer
+            .getAttribute("id")
+            .substring(parentContainer.getAttribute("id").indexOf("_"));
+          var mostlikely = document.getElementById("mostlikely" + destination);
+          var likely = document.getElementById("likely" + destination);
 
+          if (parentContainer.children.length == 1){
+            if( (mostlikely.children.length == 1 &&
+              mostlikely.children[0].innerText ==
+              parentContainer.children[0].innerText) ||
+            (likely.children.length == 1 &&
+              likely.children[0].innerText ==
+              parentContainer.children[0].innerText))
+              {
+                swal("Account already Exists In Row", "Kindly Check Again", "error", {
+                  button: "Ok!",
+                });
+                parentContainer.removeChild(evt.item);
+              }
+          }
+
+          
+          if (parentContainer.children.length > 1) {
+            if (parentContainer.children[0].innerText ==
+              parentContainer.children[1].innerText ||
+              (mostlikely.children.length == 1 &&
+                mostlikely.children[0].innerText ==
+                parentContainer.children[0].innerText) ||
+              (likely.children.length == 1 &&
+                likely.children[0].innerText ==
+                parentContainer.children[0].innerText)) {
+                  swal("Account already Exists In Row", "Kindly Check Again", "error", {
+                    button: "Ok!",
+                  });
+                  parentContainer.removeChild(evt.item);
+                }
+            else {
+            parentContainer.children[1].remove();
+            }
+
+
+          }
+        },
       });
     });
 
+  
     // Add click event handlers to the buttons
     $("#navbarNav button").click(function () {
-
       $("#navbarNav button").removeClass("active");
       $(this).addClass("active");
       var buttonValue = $("#navbarNav .btn.active").val();
-
       if (buttonValue === currentButtonValue) {
         // the clicked button is already active, do nothing
         return;
       }
-
       // hide all the existing divs inside the scrollable div
       SourceDiv.children().hide();
       MostLikelyDiv.children().hide(); // hide most likely destination divs
       LikelyDiv.children().hide(); // hide likely destination divs
       PossiblesDiv.children().hide(); // hide possible destination divs
-
       // Loop through the data array and show/hide the divs as appropriate
       for (var i = 0; i < SourceData.length; i++) {
         var data = SourceData[i];
-
         if (
           data.hasOwnProperty("Type") &&
           data.Type === buttonValue &&
@@ -253,83 +344,88 @@ $(document).ready(function () {
           var divIndex = i; // index of the corresponding div is 1-based
           var sourceDiv = SourceDiv.children(":nth-child(" + divIndex + ")");
           sourceDiv.show();
-
           // show the corresponding destination div
           var destination = mostLikelyDiv.attr("data-destination");
           $("#" + destination + "_" + sourceDiv.attr("id")).show();
 
           var destination2 = likelyDiv.attr("data-destination");
           $("#" + destination2 + "_" + sourceDiv.attr("id")).show();
-
-
+          
           var destination3 = possiblesDiv.attr("data-destination");
           $("#" + destination3 + "_" + sourceDiv.attr("id")).show();
-
         }
       }
       // update the current button value
       currentButtonValue = buttonValue;
     });
 
-    if (localStorage.getItem('Standardizer')){
-   // Retrieve the data from the local storage
-   var Standardizer = JSON.parse(localStorage.getItem('Standardizer'));
-   // Loop through the data object and set the text content of the respective divs
-   for (var i = 0; i < Standardizer.length; i++) {
-     var data = Standardizer[i];
-     var likelyElem = document.getElementById("likely_" + data.DataNumber);
-     var mostlikelyElem = document.getElementById("mostlikely_" + data.DataNumber);
-     var possiblesElem = document.getElementById("possibles_" +data.DataNumber);
-     // Create child elements if they don't exist
-     if (!likelyElem.children[0]) {
-       var likelyChild = document.createElement("div");
-       likelyElem.appendChild(likelyChild);
-     }
-     if (!mostlikelyElem.children[0]) {
-       var mostlikelyChild = document.createElement("div");
-       mostlikelyElem.appendChild(mostlikelyChild);
-     }
-     if (!possiblesElem.children[0]) {
-       var possiblesChild = document.createElement("div");
-       possiblesElem.appendChild(possiblesChild);
-     }
-     // Set the text content of the child elements with the data
-     likelyElem.children[0].innerHTML = data.MostLikelyLocalData;
-     mostlikelyElem.children[0].innerHTML = data.LikelyLocalData;
-     possiblesElem.children[0].innerHTML = data.PossibleData;
-   }
+
+    if (localStorage.getItem("Standardizer")) {
+      // Retrieve the data from the local storage
+      var Standardizer = JSON.parse(localStorage.getItem("Standardizer"));
+      // Loop through the data object and set the text content of the respective divs
+      for (var i = 0; i < Standardizer.length; i++) {
+        var data = Standardizer[i];
+        var likelyElem = document.getElementById("likely_" + data.DataNumber);
+        var mostlikelyElem = document.getElementById(
+          "mostlikely_" + data.DataNumber
+        );
+        var possiblesElem = document.getElementById(
+          "possibles_" + data.DataNumber
+        );
+        // Create child elements if they don't exist
+        if (!likelyElem.children[0] && data.LikelyLocalData !== "") {
+          var likelyChild = document.createElement("div");
+          likelyChild.classList.add("sort_likely");
+          likelyChild.setAttribute("draggable", "false");
+          likelyElem.appendChild(likelyChild);
+          likelyElem.children[0].innerHTML = data.LikelyLocalData;
+        }
+        if (!mostlikelyElem.children[0] && data.MostLikelyLocalData !== "") {
+          var mostlikelyChild = document.createElement("div");
+          mostlikelyChild.classList.add("sort_mostlikely");
+          mostlikelyChild.setAttribute("draggable", "false");
+          mostlikelyElem.appendChild(mostlikelyChild);
+          mostlikelyElem.children[0].innerHTML = data.MostLikelyLocalData;
+        }
+        if (!possiblesElem.children[0] && data.PossibleData !== "") {
+          var possiblesChild = document.createElement("div");
+          possiblesChild.classList.add("sort_possible");
+          possiblesChild.setAttribute("draggable", "false");
+          possiblesElem.appendChild(possiblesChild);
+          possiblesElem.children[0].innerHTML = data.PossibleData;
+        }
+      }
     }
-
- 
-
-    // Initialize Standardizer as an empty array
-
-
     $("#submit").click(function () {
       var now = new Date();
       var date = now.toLocaleDateString();
-      var time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-      $('.lastupdated').text('Last Updated on ' + date + ' at ' + time);
+      var time = now.toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+      });
+      $(".lastupdated").text("Last Updated on " + date + " at " + time);
       // Initialize an empty object to store the data
       var Standardizer = [];
-
       for (var i = 0; i < SourceData.length; i++) {
         var data = SourceData[i];
-
-        if (data.Number !== '') {
+        if (data.Number !== "") {
           var MostLikelyLocalData = "";
-          var MostLikelyElem = document.getElementById("likely_" + data.Number).children[0];
+          var MostLikelyElem = document.getElementById(
+            "mostlikely_" + data.Number
+          ).children[0];
           if (MostLikelyElem && MostLikelyElem.hasChildNodes()) {
             MostLikelyLocalData = MostLikelyElem.innerText;
           }
-
           var LikelyLocalData = "";
-          var LikelyElem = document.getElementById("mostlikely_" + data.Number).children[0];
+          var LikelyElem = document.getElementById("likely_" + data.Number)
+            .children[0];
           if (LikelyElem && LikelyElem.hasChildNodes()) {
             LikelyLocalData = LikelyElem.innerText;
           }
           var PossibleData = "";
-          var PossibleElem = document.getElementById("possibles_" + data.Number).children[0];
+          var PossibleElem = document.getElementById("possibles_" + data.Number)
+            .children[0];
           if (PossibleElem && PossibleElem.hasChildNodes()) {
             PossibleData = PossibleElem.innerText;
           }
@@ -338,24 +434,15 @@ $(document).ready(function () {
             DataNumber: data.Number,
             MostLikelyLocalData: MostLikelyLocalData,
             LikelyLocalData: LikelyLocalData,
-            PossibleData: PossibleData
+            PossibleData: PossibleData,
           };
           Standardizer.push(dataObject);
         }
       }
       // Save the Standardizer array in local storage
-      localStorage.setItem('Standardizer', JSON.stringify(Standardizer));
+      localStorage.setItem("Standardizer", JSON.stringify(Standardizer));
     });
-
-
-
   });
-
-
-
-
-
-
   $.get("./Files/MasterChartOfAcounts - Sheet1.csv", function (csvData) {
     // Convert to JSON
     var MasterData = csvJSON(csvData);
@@ -389,13 +476,10 @@ $(document).ready(function () {
       });
     });
   });
-
-
   $(".destination_navabr .btn").click(function () {
     $(".destination_navabr button").removeClass("active");
     $(this).addClass("active");
     var buttonValue = $(".destination_navabr .active").val().toLowerCase();
-
     $.get("./Files/MasterChartOfAcounts - Sheet1.csv", function (csvData) {
       // Convert to JSON
       var MasterData = csvJSON(csvData);
@@ -431,12 +515,8 @@ $(document).ready(function () {
       });
     });
   });
-  
   $(".toggle").click(function () {
-    $(".nav").toggleClass("justify-content-end  ");
+    $(".nav").toggleClass("justify-content-end");
     $(".toggle").toggleClass("text-light");
   });
-
-
 });
-
