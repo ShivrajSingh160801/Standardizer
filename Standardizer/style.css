@@ -1,40 +1,303 @@
-/* Top Tab-Bar CoA*/
-.MainTabBar .nav-link {
+.navbar-nav .nav-link {
   position: relative;
 }
 
-.MainTabBar .nav-link::before {
+.navbar-nav .nav-link::before {
   content: "";
   position: absolute;
   width: 51%;
   height: 2px;
   bottom: -13px;
   left: 13px !important;
-  background-color: #8ccfeb;
+  background-color: #8CCFEB;
   visibility: hidden;
   transform: scaleX(0);
 }
 
-.MainTabBar .nav-link.active::before {
+.navbar-nav .nav-link.active::before {
   visibility: visible;
   transform: scaleX(1);
 }
 
-.CoATAb {
-  color: #00a5e5 !important;
+.navdiv {
+  height: 52px;
+}
+
+.MainNavbar .btn.active {
+  background-color: #3CB7E7 !important;
+  color: white !important;
+}
+
+.material-icons {
+  font-size: 14px !important;
+}
+
+.o-hidden {
+  overflow: hidden;
+}
+
+.nav {
+  transition: transform 0.4s;
+  transform: translateX(50%);
+  left: -50%;
+  display: flex;
+  justify-content: start;
+  padding: 0 20px; 
+}
+
+.nav.justify-content-end {
+  transform: translateX(0);
+  left: 0;
+}
+
+.MainNavbarButtons {
+  background-color: #EFF2F3;
+  color: #6c7972;
+  border-bottom: solid 2px gainsboro
 }
 
 
-/*NavBAr For Standard-CofA-Data Buttons*/
-.Standard_CofA .btn.active {
-    background-color: #3CB7E7 !important;
-    color: white !important;
-  }
 
-  .Standard_CofA_Buttons {
-    background-color: #EFF2F3;
-    color: #6c7972;
-    border-bottom: solid 2px gainsboro
-  }
+#DestinationAccountStructure::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+  background-color: white
+}
+
+#DestinationAccountStructure::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+#DestinationAccountStructure::-webkit-scrollbar-thumb {
+  background-color: skyblue;
+  background-image: -webkit-linear-gradient(45deg,
+      rgba(255, 255, 255, .2) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, .2) 50%,
+      rgba(255, 255, 255, .2) 75%,
+      transparent 75%,
+      transparent)
+}
+
+#SourceScollBar {
+  border: solid 2px;
+  border-color: gainsboro;
+  margin-left: 6px;
+  margin-right: 15px;
+  font-size: small;
+  margin-bottom: -15px;
+  padding-bottom: 13px;
+}
 
 
+
+.nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin: 0 10px;
+}
+
+.nav button {
+  position: relative;
+  border: none;
+  background: none;
+  font-size: small;
+  font-weight: bold;
+  padding: 11px 0;
+
+  cursor: pointer;
+}
+
+.nav button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: green;
+  color: green;
+  transform: scaleX(0);
+  /* transition: transform 0.3s ease-out; */
+}
+/* 
+.nav button.active::before {
+  transform: scaleX(1);
+
+} */
+
+.nav .btn.active {
+  color: green !important;
+}
+
+.Masterclass {
+  margin-top: 10px;
+  padding: 5px;
+  border: solid 2px;
+  border-color: gainsboro;
+  font-size: small;
+}
+
+.DestinationClass {
+  cursor: grab !important;
+  margin: 6px;
+  padding: 7px;
+  border: solid 2px;
+  border-color: gainsboro;
+  font-size: small;
+  width: 97%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.mostlikely_sortable_container {
+  border: solid 2px;
+  border-color: gainsboro;
+  padding: 5px;
+  margin-top: 10px;
+  font-size: small;
+  overflow: hidden;
+cursor: grab;
+}
+
+.likely_sortable_container {
+  border: solid 2px;
+  border-color: gainsboro;
+  padding: 5px;
+  margin-top: 10px;
+  font-size: small;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.possibles_sortable_container {
+  border: solid 2px;
+  border-color: gainsboro;
+  padding: 5px;
+  margin-top: 10px;
+  font-size: small;
+  overflow: hidden;
+  cursor: grab;
+}
+
+
+.sort_mostlikely
+{
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+}
+
+.sort_likely
+{
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+}
+
+.sort_possible
+{
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+}
+
+
+
+.DestinationFilterContainers{
+  max-width: 94%;
+  min-width: 94%;
+  min-height: 32.7px;
+  margin: 6px;
+  border: solid 2px;
+  border-color: gainsboro;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DestinationFilterContainers .ArrowButtonContainer{
+  width: 40px;
+}
+
+.DestinationFilterContainers .ButtonsContainer{
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+  width: calc(100% - 40px);
+}
+
+
+.DestinationFilterContainers .ButtonsContainer button{
+  display: block;
+  word-wrap: normal;
+  white-space: nowrap;
+  border: none;
+}
+
+.DestinationFilterContainers .ButtonsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.ButtonsContainer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: green;
+  color: green;
+  transform: scaleX(0);
+}
+
+.ButtonsContainer .btn.active {
+  color: green !important;
+  position: relative;
+}
+
+.ButtonsContainer .btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: green;
+}
+
+.btnbox{
+
+  margin-top: 42px;
+  position: fixed;
+  z-index: 9999;
+  background-color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#MasterlistSearch {
+  margin: 6px;
+  padding: 7px;
+  border: solid 2px;
+  border-color: gainsboro;
+  font-size: small;
+  width: 94%;
+
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgICB2ZXJzaW9uPSIxLjEiICAgaWQ9InN2ZzQ0ODUiICAgdmlld0JveD0iMCAwIDIxLjk5OTk5OSAyMS45OTk5OTkiICAgaGVpZ2h0PSIyMiIgICB3aWR0aD0iMjIiPiAgPGRlZnMgICAgIGlkPSJkZWZzNDQ4NyIgLz4gIDxtZXRhZGF0YSAgICAgaWQ9Im1ldGFkYXRhNDQ5MCI+ICAgIDxyZGY6UkRGPiAgICAgIDxjYzpXb3JrICAgICAgICAgcmRmOmFib3V0PSIiPiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+ICAgICAgICA8ZGM6dHlwZSAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4gICAgICAgIDxkYzp0aXRsZT48L2RjOnRpdGxlPiAgICAgIDwvY2M6V29yaz4gICAgPC9yZGY6UkRGPiAgPC9tZXRhZGF0YT4gIDxnICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLC0xMDMwLjM2MjIpIiAgICAgaWQ9ImxheWVyMSI+ICAgIDxnICAgICAgIHN0eWxlPSJvcGFjaXR5OjAuNSIgICAgICAgaWQ9ImcxNyIgICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjAuNCw4NjYuMjQxMzQpIj4gICAgICA8cGF0aCAgICAgICAgIGlkPSJwYXRoMTkiICAgICAgICAgZD0ibSAtNTAuNSwxNzkuMSBjIC0yLjcsMCAtNC45LC0yLjIgLTQuOSwtNC45IDAsLTIuNyAyLjIsLTQuOSA0LjksLTQuOSAyLjcsMCA0LjksMi4yIDQuOSw0LjkgMCwyLjcgLTIuMiw0LjkgLTQuOSw0LjkgeiBtIDAsLTguOCBjIC0yLjIsMCAtMy45LDEuNyAtMy45LDMuOSAwLDIuMiAxLjcsMy45IDMuOSwzLjkgMi4yLDAgMy45LC0xLjcgMy45LC0zLjkgMCwtMi4yIC0xLjcsLTMuOSAtMy45LC0zLjkgeiIgICAgICAgICBjbGFzcz0ic3Q0IiAvPiAgICAgIDxyZWN0ICAgICAgICAgaWQ9InJlY3QyMSIgICAgICAgICBoZWlnaHQ9IjUiICAgICAgICAgd2lkdGg9IjAuODk5OTk5OTgiICAgICAgICAgY2xhc3M9InN0NCIgICAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgwLjY5NjQsLTAuNzE3NiwwLjcxNzYsMC42OTY0LC0xNDIuMzkzOCwyMS41MDE1KSIgICAgICAgICB5PSIxNzYuNjAwMDEiICAgICAgICAgeD0iLTQ2LjIwMDAwMSIgLz4gICAgPC9nPiAgPC9nPjwvc3ZnPg==);
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: 0px 5px !important;
+    padding-left: 25px;
+
+}
